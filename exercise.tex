@@ -1,25 +1,32 @@
 \documentclass[a4paper,11pt,dvipdfmx]{ujarticle}
-% パッケージ
+\usepackage{float}
 \usepackage{graphicx}
 \usepackage{url}
-% レイアウト指定を記述したファイルの読み込み
 \input{layout}
 
-% タイトルと氏名を変更せよ．
-\title{タイトル}
-\author{蓑原 隆}
+\title{日本におけるデジタル化の現状}
+\author{G58489-2025 向井梨茉}
 
 \begin{document}
 
-\maketitle %ここにタイトルが入る
+\maketitle 
 
-% ここから本文
-% 節見出し: \section{}
-% を使う
+\section{デジタル競争率ランキング}
+
+国際経営開発研究所（IMD）の調査\cite{IMD}によると,日本のデジタル競争力のランキングは図\ref{fig:競争率}に示すように、
+調査対象64カ国中,総合で28位,知識分野で25位となっている。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics{fig31.png}
+    \caption{デジタル競争率ランキング（64カ国中）}\label{fig:競争率}
+\end{figure}
+
+
 
 % 本文(1)
 %  参考文献の参照: \cite{}
-%  図番号の参照： \ref{}
+%  図番号の参照： \ref{}、
 % を使う
 % 文献データベースのキーワードは oecd と imd
 % になっている．
@@ -39,12 +46,59 @@
 % で図が中央に来るようにする
 
 % ーーー
-% 節見出し(2)
+\section{ブロードバンドの整備状況}
 
-% 本文(2)
+OECDによるブローバンド回線の普及に関する調査\cite{oecd}によると、表\ref{tbl:加入者数}に示すように,
+日本における100人あたりの光ファイバー回線の加入者数は29.0で,
+韓国,スウェーデン,
+ノルウェーに続いて第４位となっている。
 
-% 表の挿入
-% \begin{tabular}
+\begin{table}[htbp]
+    \centering
+    \caption{光ファイバー回線の加入者数}
+    \label{tbl:加入者数}
+
+    \begin{tabular}{|c|l|r|}
+        \hline
+        順位 & 国名 & 加入者数 \\
+        \hline
+        １位 & 韓国 & 38.2 \\
+        \hline
+        ２位 & スウェーデン & 31.9 \\
+        \hline
+        ３位 & ノルウェー & 29.5 \\
+        \hline
+        ４位 & 日本 & 29.0 \\
+        \hline
+        ５位 & アイスランド & 28.8 \\
+        \hline
+        ６位 & スペイン & 27.3 \\
+        \hline
+        ７位 & ポルトガル & 25.1 \\
+        \hline
+        ８位 & ニュージーランド & 23.6 \\
+        \hline
+        ９位 & リトアニア & 22.3 \\
+        \hline
+        １０位 & フランス & 21.2 \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\section{考察}
+
+\begin{itemize}
+    \item 韓国の光ファイバー加入率が1番多い。
+    \item 日本の光ファイバー加入率は4位であり、1位との差は約15％である。
+    \item デジタル競争率ランキングはアメリカが1位である。
+    \item 日本は中国よりも競争率ランキングは低いためあげていく必要がある。
+\end{itemize}
+
+
+
+
+
+        % \begin{tabular}
 % \end{tabular}    
 % による表の記述を 
 % \begin{table}[htbp]
@@ -70,5 +124,5 @@
 %
 \bibliographystyle{junsrt}
 \bibliography{exercise.bib}
-
+\
 \end{document}
